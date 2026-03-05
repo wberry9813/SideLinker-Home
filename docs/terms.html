@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head><title>SideLinker - Privacy Policy</title></head>
-<body style="font-family: sans-serif; padding: 40px; line-height: 1.6;">
-  SideLinker 服务协议 (EULA)
-生效日期：2026年3月5日
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideLinker - Terms of Service</title>
+    <style>
+        :root { --bg-color: #F2F2F7; --text-primary: #1C1C1E; --text-secondary: #8E8E93; --glass-bg: rgba(255, 255, 255, 0.6); --glass-border: rgba(255, 255, 255, 0.8); --accent-color: #007AFF; }
+        body { margin: 0; padding: 0; background-color: var(--bg-color); background-image: radial-gradient(circle at 15% 50%, rgba(220, 225, 255, 0.8), transparent 25%), radial-gradient(circle at 85% 30%, rgba(200, 240, 255, 0.8), transparent 25%); background-attachment: fixed; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text-primary); line-height: 1.6; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; box-sizing: border-box; }
+        .glass-container { background: var(--glass-bg); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); border: 1px solid var(--glass-border); border-radius: 32px; padding: 48px; max-width: 720px; width: 100%; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1); }
+        h1 { font-size: 36px; font-weight: 700; margin-top: 0; margin-bottom: 8px; text-align: center; }
+        .subtitle { text-align: center; color: var(--text-secondary); font-size: 16px; margin-bottom: 40px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+        p, li { font-size: 15px; margin-bottom: 12px; color: #3A3A3C; }
+        .footer { margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-secondary); }
+        .footer a { color: var(--accent-color); text-decoration: none; margin: 0 10px; }
+        @media (max-width: 600px) { .glass-container { padding: 32px 24px; border-radius: 24px; } h1 { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>SideLinker Terms of Service (EULA)</h1>
+        <div class="subtitle">Effective Date: March 5, 2026</div>
 
-欢迎使用 SideLinker（以下简称“本应用”）。在本应用提供服务之前，请您仔细阅读本《服务协议》（以下简称“本协议”）。一旦您安装、运行或点击“购买 Pro”版本，即表示您已阅读并同意本协议的所有条款。
+        <h2>1. Scope of Service</h2>
+        <p>SideLinker is designed to optimize the integration between iPad and Mac. The service consists of an iPad client app and a companion Mac server component for receiving commands (such as waking the display and triggering Sidecar).</p>
 
-1. 服务内容
-SideLinker 是一款旨在优化 iPad 与 Mac 之间联动体验的工具。本服务包含：
+        <h2>2. License & Pro Purchases</h2>
+        <p>By purchasing the <strong>Pro version</strong> (a one-time payment), you are granted a personal, non-exclusive license to use the advanced features. All payments are processed securely by Apple via the App Store. Due to the digital nature of the product, refund requests must be handled through Apple's official support channels.</p>
 
-iPad 客户端应用（用于指令发送与远程控制）；
+        <h2>3. User Responsibility & Risks</h2>
+        <p>SideLinker interacts with low-level macOS functions (e.g., Sidecar, Bluetooth wake, power management). By using this app, you acknowledge and agree that:</p>
+        <ul>
+            <li>You are responsible for ensuring hardware and network compatibility.</li>
+            <li>While we strive for stability, macOS updates or hardware variations may cause unexpected system behaviors (e.g., display glitches or improper sleep states).</li>
+        </ul>
 
-Mac 端配套服务端（用于接收指令并执行系统级操作，如 Sidecar 唤醒、系统状态调整等）。
+        <h2>4. Disclaimer of Warranty</h2>
+        <p><strong>This application is provided "As-Is", without any express or implied warranties.</strong> To the maximum extent permitted by law, the developer shall not be liable for:</p>
+        <ul>
+            <li>Any data loss or corruption resulting from remote system control.</li>
+            <li>Hardware wear or failure due to frequent wake/sleep cycles.</li>
+            <li>Any indirect, incidental, or consequential damages arising from the use of the app.</li>
+        </ul>
 
-2. 软件授权与 Pro 版本支付
-授权许可：开发者授予您一项个人的、不可转让的、非排他性的许可，以使用本软件。
-
-Pro 版本购买：本应用提供一次性付费（18 元人民币）解锁 Pro 功能的服务。
-
-支付处理：所有支付过程均由 Apple App Store 负责。开发者不接触您的信用卡信息。
-
-退款政策：由于本应用为数字产品，一旦解锁，开发者不直接受理退款申请。如需退款，请通过 Apple 官方渠道（https://www.google.com/search?q=reportaproblem.apple.com）按苹果相关政策申请。
-
-3. 用户责任与风险（核心条款）
-本应用涉及对 Mac 操作系统的底层功能（如随航 Sidecar、蓝牙唤醒、电源管理）的调用，用户知晓并同意：
-
-硬件环境：用户需自行确保硬件（如 Mac mini M4, iPad 等）及网络环境（蓝牙、局域网）的兼容性。
-
-系统稳定性：尽管开发者已尽力确保程序的稳定性，但由于 macOS 系统更新或硬件差异，使用本应用可能导致系统进入非预期状态（如非正常休眠、显示异常等）。用户应在知晓此类风险的情况下使用。
-
-4. 免责声明 (Disclaimer of Warranty)
-本应用按“现状 (As-Is)”提供，不附带任何形式的明示或暗示保证。 在法律允许的最大范围内，开发者明确声明不承担以下责任：
-
-数据丢失：因使用本应用控制 Mac 系统而导致的任何数据丢失或损坏。
-
-硬件损害：因频繁唤醒或触发系统功能导致的硬件损耗或故障。
-
-间接损失：开发者不因使用本应用产生的任何间接、偶然、特殊或惩罚性损害（包括但不限于利润损失、业务中断）承担责任。
-
-5. 知识产权
-本应用的所有权（包括但不限于代码、UI 设计、Logo、名称“SideLinker”）均归原开发者所有。未经许可，严禁对本应用进行反向工程、反编译或拆解。
-
-6. 隐私保护
-本应用尊重并保护用户信息。有关数据处理详情，请参阅我们的《隐私政策》。
-
-7. 协议修改
-开发者保留随时修改本协议的权利。修改后的协议一经公布即替代原协议。若您继续使用本应用，即视为您接受修改后的条款。
-    </body>
+        <div class="footer">
+            &copy; 2026 SideLinker. All rights reserved.<br>
+            <a href="privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
 </html>
