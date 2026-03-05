@@ -1,35 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <title>SideLinker - Privacy Policy</title>
-  <style>
-    body { background-color: #F2F2F7; color: #1C1C1E; max-width: 800px; margin: auto; padding: 50px; }
-    h1 { border-bottom: 1px solid #D1D1D6; padding-bottom: 10px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideLinker - Seamless Mac Control</title>
+    <style>
+        /* 基础重置与系统字体引入 */
+        :root {
+            --bg-color: #F2F2F7; /* 苹果系统浅灰底色 */
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --glass-bg: rgba(255, 255, 255, 0.6); /* 毛玻璃底色 */
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --accent-color: #007AFF; /* 苹果标准蓝，可换成你的薄荷绿 */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            /* 使用类似系统壁纸的微妙渐变背景，增强玻璃感 */
+            background-image: radial-gradient(circle at 15% 50%, rgba(220, 225, 255, 0.8), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(200, 240, 255, 0.8), transparent 25%);
+            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* 核心：毛玻璃容器 (Bento 风格) */
+        .glass-container {
+            background: var(--glass-bg);
+            /* 关键：高斯模糊 */
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            /* 内部描边模拟边缘反光 */
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 48px;
+            max-width: 720px;
+            width: 100%;
+            /* 弥散阴影 */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), 
+                        inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+
+        /* 排版细节 */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-top: 0;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        /* 底部信息 */
+        .footer {
+            margin-top: 48px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 响应式适配移动端 */
+        @media (max-width: 600px) {
+            .glass-container {
+                padding: 32px 24px;
+                border-radius: 24px;
+            }
+            h1 { font-size: 28px; }
+            .subtitle { font-size: 16px; }
+        }
+    </style>
 </head>
-<body style="font-family: sans-serif; padding: 40px; line-height: 1.6;">
-SideLinker Privacy Policy
-Last Updated: 2026-03-05
+<body>
 
-1. Data Collection & Usage
-SideLinker is designed with privacy as a core principle.
+    <div class="glass-container">
+        <h1>SideLinker Privacy Policy</h1>
+        <div class="subtitle">Effective Date: March 5, 2026</div>
 
-No Personal Data: We do not collect, store, or transmit any personal identifiable information (PII) to external servers.
+        <h2>1. Data Collection & Usage</h2>
+        <p>SideLinker is designed with privacy as a core principle. We do not collect, store, or transmit any personal identifiable information (PII) to external servers.</p>
+        <p>All device connection data, Mac server addresses, and control commands are processed and stored <strong>locally</strong> on your device.</p>
 
-Local Processing: All device connection data, Mac server addresses, and control commands are processed and stored locally on your device.
+        <h2>2. Permissions Disclosure</h2>
+        <p>To function properly, SideLinker requires the following permissions:</p>
+        <ul>
+            <li><strong>Local Network:</strong> Used to communicate with the SideLinker Mac server component to trigger Sidecar and system commands.</li>
+            <li><strong>Bluetooth:</strong> Used for proximity detection to enable "Near-field Awakening" features.</li>
+            <li><strong>iCloud:</strong> Used exclusively for syncing your Pro status and connection preferences across your own devices via Apple’s secure infrastructure.</li>
+        </ul>
 
-2. Permissions Disclosure
+        <h2>3. Third-party Services</h2>
+        <p>We use Apple StoreKit for In-App Purchases. Any financial data is handled entirely by Apple and is subject to Apple's Privacy Policy.</p>
 
-Bluetooth: Used for proximity detection to enable "Near-field Awakening" features.
+        <h2>4. Contact Us</h2>
+        <p>If you have any questions regarding this privacy policy or the SideLinker app, please contact us at: <a href="mailto:support@sidelinker.app">support@sidelinker.app</a>.</p>
 
-Local Network: Used to communicate with the SideLinker Mac server component.
+        <div class="footer">
+            &copy; 2026 SideLinker. All rights reserved.<br>
+            <a href="terms.html">Terms of Service</a> | <a href="index.html">Back to Home</a>
+        </div>
+    </div>
 
-iCloud: Used exclusively for syncing your Pro status and connection preferences across your own devices via Apple’s secure infrastructure.
-
-3. Third-party Services
-We use Apple StoreKit for In-App Purchases. Any financial data is handled entirely by Apple and is subject to Apple's Privacy Policy.
-
-4. Contact
-If you have any questions, please contact us at: https://github.com/wberry9813.
-    </body>
+</body>
 </html>
