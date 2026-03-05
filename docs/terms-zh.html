@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideLinker - 服务协议</title>
+    <style>
+        :root { --bg-color: #F2F2F7; --text-primary: #1C1C1E; --text-secondary: #8E8E93; --glass-bg: rgba(255, 255, 255, 0.6); --glass-border: rgba(255, 255, 255, 0.8); --accent-color: #007AFF; }
+        body { margin: 0; padding: 0; background-color: var(--bg-color); background-image: radial-gradient(circle at 15% 50%, rgba(220, 225, 255, 0.8), transparent 25%), radial-gradient(circle at 85% 30%, rgba(200, 240, 255, 0.8), transparent 25%); background-attachment: fixed; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; color: var(--text-primary); line-height: 1.6; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; box-sizing: border-box; }
+        .glass-container { background: var(--glass-bg); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); border: 1px solid var(--glass-border); border-radius: 32px; padding: 48px; max-width: 720px; width: 100%; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1); }
+        h1 { font-size: 36px; font-weight: 700; margin-top: 0; margin-bottom: 8px; text-align: center; }
+        .subtitle { text-align: center; color: var(--text-secondary); font-size: 16px; margin-bottom: 40px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+        p, li { font-size: 15px; margin-bottom: 12px; color: #3A3A3C; }
+        .footer { margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-secondary); }
+        .footer a { color: var(--accent-color); text-decoration: none; margin: 0 10px; }
+        @media (max-width: 600px) { .glass-container { padding: 32px 24px; border-radius: 24px; } h1 { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>SideLinker 服务协议 (EULA)</h1>
+        <div class="subtitle">生效日期：2026年3月5日</div>
+
+        <h2>1. 服务内容</h2>
+        <p>SideLinker 是一款旨在优化 iPad 与 Mac 之间联动体验的工具。本服务包含 iPad 客户端（发送指令）及 Mac 端配套程序（接收并执行随航唤醒等系统级操作）。</p>
+
+        <h2>2. 软件授权与 Pro 购买</h2>
+        <p>通过一次性付费购买 <strong>Pro 版本</strong>，您将获得使用高级功能的个人非排他性许可。所有支付环节均由 Apple App Store 处理。因本应用为数字产品，如需退款，请通过 Apple 官方售后渠道申请。</p>
+
+        <h2>3. 用户责任与风险提示</h2>
+        <p>由于本应用涉及调用 macOS 底层功能（如电源管理、随航状态、蓝牙唤醒），您知晓并同意：</p>
+        <ul>
+            <li>您需自行确保设备的硬件（如 Mac mini、iPad）及网络环境兼容性。</li>
+            <li>受限于 macOS 系统更新或硬件个体差异，使用本应用可能会导致偶发的系统非预期状态（如异常休眠、显示断开等）。</li>
+        </ul>
+
+        <h2>4. 免责声明</h2>
+        <p><strong>本应用按“现状 (As-Is)”提供，不附带任何明示或暗示的保证。</strong> 在法律允许的最大范围内，开发者明确声明不承担以下责任：</p>
+        <ul>
+            <li>因远程控制导致的数据丢失或损坏。</li>
+            <li>因高频唤醒操作引发的潜在硬件损耗。</li>
+            <li>因使用本应用产生的任何间接、偶然或特殊损害。</li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2026 SideLinker. 保留所有权利。<br>
+            <a href="privacy-zh.html">隐私政策</a> | <a href="index.html">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>
