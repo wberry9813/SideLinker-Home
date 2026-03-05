@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideLinker - 隐私政策</title>
+    <style>
+        :root {
+            --bg-color: #F2F2F7;
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --glass-bg: rgba(255, 255, 255, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --accent-color: #007AFF;
+        }
+        body {
+            margin: 0; padding: 0;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 50%, rgba(220, 225, 255, 0.8), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(200, 240, 255, 0.8), transparent 25%);
+            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-primary); line-height: 1.6;
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh; padding: 40px 20px; box-sizing: border-box;
+        }
+        .glass-container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px);
+            border: 1px solid var(--glass-border); border-radius: 32px;
+            padding: 48px; max-width: 720px; width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+        h1 { font-size: 36px; font-weight: 700; margin-top: 0; margin-bottom: 8px; text-align: center; }
+        .subtitle { text-align: center; color: var(--text-secondary); font-size: 16px; margin-bottom: 40px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
+        p, li { font-size: 15px; margin-bottom: 12px; color: #3A3A3C; }
+        .footer { margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-secondary); }
+        .footer a { color: var(--accent-color); text-decoration: none; margin: 0 10px; }
+        @media (max-width: 600px) {
+            .glass-container { padding: 32px 24px; border-radius: 24px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>SideLinker 隐私政策</h1>
+        <div class="subtitle">生效日期：2026年3月5日</div>
+
+        <h2>1. 数据收集与使用</h2>
+        <p>SideLinker 秉持“隐私至上”的核心原则。我们不收集、不存储，也不会向任何外部服务器传输您的个人身份信息 (PII)。</p>
+        <p>所有的设备连接数据、Mac 服务端地址以及控制指令，均在您的设备上进行<strong>完全本地化</strong>的处理和存储。</p>
+
+        <h2>2. 权限使用说明</h2>
+        <p>为了实现核心功能，SideLinker 需要以下系统权限：</p>
+        <ul>
+            <li><strong>本地网络 (Local Network)：</strong>仅用于在同一局域网内与 Mac 服务端通信，以触发随航 (Sidecar) 和执行系统指令。</li>
+            <li><strong>蓝牙 (Bluetooth)：</strong>用于近距离设备发现，以支持“近场唤醒”功能。</li>
+            <li><strong>iCloud：</strong>仅依赖 Apple 提供的高度安全的 iCloud 基础设施，用于在您的个人设备之间同步您的 Pro 购买状态和连接偏好。</li>
+        </ul>
+
+        <h2>3. 第三方服务</h2>
+        <p>我们使用 Apple StoreKit 提供 App 内购买服务 (Pro 权限解锁)。您的任何财务数据均由 Apple 全权处理，并受 Apple 隐私政策的约束。</p>
+
+        <h2>4. 联系我们</h2>
+        <p>如果您对本隐私政策或 SideLinker 有任何疑问，请通过邮件联系我们：<a href="mailto:support@sidelinker.app">support@sidelinker.app</a>。</p>
+
+        <div class="footer">
+            &copy; 2026 SideLinker. 保留所有权利。<br>
+            <a href="terms-zh.html">服务协议</a> | <a href="index.html">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>
