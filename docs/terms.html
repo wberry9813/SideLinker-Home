@@ -5,47 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SideLinker - Terms of Service</title>
     <style>
-        :root { --bg-color: #F2F2F7; --text-primary: #1C1C1E; --text-secondary: #8E8E93; --glass-bg: rgba(255, 255, 255, 0.6); --glass-border: rgba(255, 255, 255, 0.8); --accent-color: #007AFF; }
-        body { margin: 0; padding: 0; background-color: var(--bg-color); background-image: radial-gradient(circle at 15% 50%, rgba(220, 225, 255, 0.8), transparent 25%), radial-gradient(circle at 85% 30%, rgba(200, 240, 255, 0.8), transparent 25%); background-attachment: fixed; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text-primary); line-height: 1.6; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; box-sizing: border-box; }
-        .glass-container { background: var(--glass-bg); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); border: 1px solid var(--glass-border); border-radius: 32px; padding: 48px; max-width: 720px; width: 100%; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1); }
-        h1 { font-size: 36px; font-weight: 700; margin-top: 0; margin-bottom: 8px; text-align: center; }
-        .subtitle { text-align: center; color: var(--text-secondary); font-size: 16px; margin-bottom: 40px; }
-        h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
-        p, li { font-size: 15px; margin-bottom: 12px; color: #3A3A3C; }
-        .footer { margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-secondary); }
-        .footer a { color: var(--accent-color); text-decoration: none; margin: 0 10px; }
-        @media (max-width: 600px) { .glass-container { padding: 32px 24px; border-radius: 24px; } h1 { font-size: 28px; } }
+        :root {
+            --bg-color: #f2f5fb;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --glass-bg: rgba(255, 255, 255, 0.78);
+            --glass-border: rgba(255, 255, 255, 0.96);
+            --accent-color: #0ea5a4;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 18% 20%, rgba(14, 165, 164, 0.14), transparent 40%),
+                radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.12), transparent 45%),
+                linear-gradient(180deg, #f8fbff, #eef2f7);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.65;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+
+        .glass-container {
+            margin: 18px 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 34px 28px;
+            max-width: 860px;
+            width: 100%;
+            box-shadow: 0 16px 44px rgba(15, 23, 42, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+
+        h1 {
+            font-size: 34px;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0f766e;
+            background: rgba(20, 184, 166, 0.12);
+            border: 1px solid rgba(20, 184, 166, 0.25);
+            border-radius: 999px;
+            padding: 5px 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: #374151;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 34px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+
+        @media (max-width: 680px) {
+            body { padding: 12px; }
+            .glass-container { padding: 24px 18px; border-radius: 18px; }
+            h1 { font-size: 28px; }
+        }
     </style>
 </head>
 <body>
     <div class="glass-container">
         <h1>SideLinker Terms of Service (EULA)</h1>
-        <div class="subtitle">Effective Date: March 5, 2026</div>
+        <div class="subtitle">Effective Date: March 20, 2026</div>
+        <div class="tag">App Store Review Reference Ready (Guideline 5.2.1)</div>
 
         <h2>1. Scope of Service</h2>
-        <p>SideLinker is designed to optimize the integration between iPad and Mac. The service consists of an iPad client app and a companion Mac server component for receiving commands (such as waking the display and triggering Sidecar).</p>
+        <p>
+            SideLinker is a utility app to improve iPad and Mac workflows. The service includes an iPad/iPhone app and
+            a companion component for your own Mac environment.
+        </p>
 
-        <h2>2. License & Pro Purchases</h2>
-        <p>By purchasing the <strong>Pro version</strong> (a one-time payment), you are granted a personal, non-exclusive license to use the advanced features. All payments are processed securely by Apple via the App Store. Due to the digital nature of the product, refund requests must be handled through Apple's official support channels.</p>
+        <h2>2. License & In-App Purchases</h2>
+        <p>
+            A purchase of the Pro version grants a personal, non-exclusive license for advanced features. Billing,
+            refunds, and payment processing are handled by Apple under App Store rules.
+        </p>
 
-        <h2>3. User Responsibility & Risks</h2>
-        <p>SideLinker interacts with low-level macOS functions (e.g., Sidecar, Bluetooth wake, power management). By using this app, you acknowledge and agree that:</p>
-        <ul>
-            <li>You are responsible for ensuring hardware and network compatibility.</li>
-            <li>While we strive for stability, macOS updates or hardware variations may cause unexpected system behaviors (e.g., display glitches or improper sleep states).</li>
-        </ul>
+        <h2>3. User Responsibility</h2>
+        <p>
+            You are responsible for ensuring compatibility of your hardware, macOS version, and local network
+            environment. Behavior may vary with system updates.
+        </p>
 
-        <h2>4. Disclaimer of Warranty</h2>
-        <p><strong>This application is provided "As-Is", without any express or implied warranties.</strong> To the maximum extent permitted by law, the developer shall not be liable for:</p>
-        <ul>
-            <li>Any data loss or corruption resulting from remote system control.</li>
-            <li>Hardware wear or failure due to frequent wake/sleep cycles.</li>
-            <li>Any indirect, incidental, or consequential damages arising from the use of the app.</li>
-        </ul>
+        <h2>4. Disclaimer</h2>
+        <p>
+            The app is provided "as is" without express or implied warranties to the extent permitted by law. The
+            developer is not liable for indirect or incidental damages caused by use of the app.
+        </p>
+
+        <h2>5. Intellectual Property & Brand Ownership</h2>
+        <p>
+            "SideLinker" name, source materials, app content, and website assets are independently created and owned by
+            the individual developer publishing this app on the App Store.
+        </p>
+        <p>
+            This app does not redistribute unauthorized third-party copyrighted materials and does not claim official
+            affiliation with unrelated hardware vendors.
+        </p>
+
+        <h2>6. Contact</h2>
+        <p>
+            For legal or review verification requests: <a href="mailto:support@sidelinker.app">support@sidelinker.app</a>
+        </p>
 
         <div class="footer">
             &copy; 2026 SideLinker. All rights reserved.<br>
-            <a href="privacy.html">Privacy Policy</a> | <a href="index.html">Back to Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms-zh.html">服务协议（中文）</a>
+            <a href="review-ownership.html">Ownership Statement (App Review)</a>
+            <a href="index.html">Home</a>
         </div>
     </div>
 </body>

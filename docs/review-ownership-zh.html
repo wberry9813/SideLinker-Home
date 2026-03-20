@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideLinker - 审核权属声明</title>
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --card: rgba(255, 255, 255, 0.82);
+            --border: rgba(255, 255, 255, 0.95);
+            --accent: #0ea5a4;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 24px;
+            background:
+                radial-gradient(circle at 20% 10%, rgba(14, 165, 164, 0.15), transparent 44%),
+                radial-gradient(circle at 85% 0%, rgba(59, 130, 246, 0.12), transparent 42%),
+                linear-gradient(180deg, #f8fbff, #edf2f7);
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 860px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 16px 44px rgba(15, 23, 42, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1);
+            padding: 32px 28px;
+        }
+
+        h1 { margin: 0; font-size: 32px; letter-spacing: -0.02em; }
+        p, li { color: #374151; line-height: 1.75; font-size: 15px; }
+        .meta { color: var(--muted); margin-top: 8px; font-size: 14px; }
+
+        h2 {
+            margin-top: 28px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+            padding-bottom: 8px;
+        }
+
+        ul { padding-left: 20px; }
+
+        .footer {
+            margin-top: 28px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 680px) {
+            body { padding: 12px; }
+            .card { padding: 24px 18px; border-radius: 18px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <h1>App 审核权属声明</h1>
+        <div class="meta">用于 App Store 审核 Guideline 5.2.1 • 更新日期：2026年3月20日</div>
+
+        <h2>1. 权利归属</h2>
+        <p>
+            SideLinker 为个人开发者独立开发的软件项目。SideLinker 品牌、应用功能、源材料、网站内容与配套软件均为发布者原创并持有相应权利。
+        </p>
+
+        <h2>2. 发布授权</h2>
+        <p>
+            本应用通过 Apple Developer Program 账号提交发布，该账号属于权利持有人本人或经权利持有人明确授权的主体。
+        </p>
+
+        <h2>3. 第三方内容声明</h2>
+        <p>
+            本应用不包含未经授权的第三方版权内容，也不宣称代表任何无关硬件厂商或品牌的官方身份。
+        </p>
+
+        <h2>4. 审核验证联系方式</h2>
+        <ul>
+            <li>支持邮箱：<a href="mailto:support@sidelinker.app">support@sidelinker.app</a></li>
+            <li>官网：<a href="https://wberry9813.github.io/SideLinker-Home/">wberry9813.github.io/SideLinker-Home</a></li>
+            <li>仓库：<a href="https://github.com/wberry9813/SideLinker-Home">github.com/wberry9813/SideLinker-Home</a></li>
+        </ul>
+
+        <div class="footer">
+            © 2026 SideLinker. 保留所有权利。<br>
+            <a href="review-ownership.html">English Version</a>
+            <a href="privacy-zh.html">隐私政策</a>
+            <a href="terms-zh.html">服务协议</a>
+            <a href="index.html">首页</a>
+        </div>
+    </article>
+</body>
+</html>

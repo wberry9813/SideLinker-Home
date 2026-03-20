@@ -1,1 +1,196 @@
-SideLinker Coming Soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideLinker - Official Site</title>
+    <style>
+        :root {
+            --bg: #f5f7fb;
+            --text: #111827;
+            --muted: #6b7280;
+            --card: rgba(255, 255, 255, 0.78);
+            --border: rgba(255, 255, 255, 0.9);
+            --brand: #0ea5a4;
+            --brand-dark: #0b7d7c;
+            --shadow: rgba(15, 23, 42, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(1200px 800px at -10% -20%, rgba(14, 165, 164, 0.18), transparent 55%),
+                radial-gradient(900px 700px at 110% 10%, rgba(59, 130, 246, 0.15), transparent 50%),
+                linear-gradient(180deg, #f7fafc, #edf2f7);
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 920px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            box-shadow: 0 22px 60px var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 1);
+            overflow: hidden;
+        }
+
+        .hero {
+            padding: 42px 28px 24px;
+            background: linear-gradient(140deg, rgba(14, 165, 164, 0.13), rgba(59, 130, 246, 0.12));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+        }
+
+        .brand {
+            margin: 0;
+            font-size: 40px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            margin: 12px 0 0;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .content {
+            padding: 28px;
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.86);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 14px;
+            color: #374151;
+            line-height: 1.65;
+        }
+
+        .links {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        a.link {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            text-decoration: none;
+            color: white;
+            background: var(--brand);
+            transition: transform 0.15s ease, background 0.15s ease;
+        }
+
+        a.link:hover {
+            transform: translateY(-1px);
+            background: var(--brand-dark);
+        }
+
+        .footer {
+            padding: 0 28px 24px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: var(--brand-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 760px) {
+            .brand { font-size: 32px; }
+            .content { grid-template-columns: 1fr; padding: 20px; }
+            .hero { padding: 28px 20px 18px; }
+            .footer { padding: 0 20px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <h1 class="brand">SideLinker</h1>
+            <p class="tagline">A companion utility to streamline iPad and Mac workflows with local-first control.</p>
+        </section>
+
+        <section class="content">
+            <article class="card">
+                <h2>About This Project</h2>
+                <p>
+                    SideLinker is independently developed and maintained by an individual developer. The app and
+                    companion components are original software works and are distributed through the Apple App Store.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Legal & Privacy</h2>
+                <p>
+                    The privacy policy and terms are published in both English and Simplified Chinese.
+                    They include intellectual property ownership statements for App Review reference.
+                </p>
+                <div class="links">
+                    <a class="link" href="privacy.html">Privacy (EN)</a>
+                    <a class="link" href="privacy-zh.html">隐私政策 (中文)</a>
+                    <a class="link" href="terms.html">Terms (EN)</a>
+                    <a class="link" href="terms-zh.html">服务协议 (中文)</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>App Review Ownership Statement</h2>
+                <p>
+                    A dedicated ownership declaration page is provided for App Store Review (Guideline 5.2.1) to
+                    verify trademark/content authorization and the relationship between app metadata and rights holder.
+                </p>
+                <div class="links">
+                    <a class="link" href="review-ownership.html">Ownership Statement (EN)</a>
+                    <a class="link" href="review-ownership-zh.html">权属声明 (中文)</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Contact</h2>
+                <p>
+                    For support or review follow-up, contact:
+                    <a href="mailto:support@sidelinker.app">support@sidelinker.app</a>
+                </p>
+            </article>
+        </section>
+
+        <footer class="footer">
+            © 2026 SideLinker. All rights reserved. |
+            GitHub: <a href="https://github.com/wberry9813/SideLinker-Home">SideLinker-Home</a>
+        </footer>
+    </main>
+</body>
+</html>
