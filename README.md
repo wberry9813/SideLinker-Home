@@ -2,6 +2,8 @@
 
 SideLinker 是一个为无头 Mac mini 准备的 Sidecar 辅助工具。它解决的核心问题是：当 Mac mini 没有外接显示器时，如何更方便地把 iPad 作为唯一屏幕唤起、连接和管理。
 
+重要说明：无头 Mac mini 使用 iPad 作为唯一屏幕时，SideLinker 需要配合 BetterDisplay 创建并保持虚拟显示器。SideLinker 负责触发、连接和管理流程，BetterDisplay 负责提供无头环境下可用的虚拟屏幕。
+
 它由 Mac 端菜单栏应用和 iPad 端应用组成。Mac 端负责发现 iPad、建立随航连接、提供局域网控制接口和蓝牙信标；iPad 端负责发起唤醒、查看状态、完成配对，并在需要时触发连接或断开。
 
 ## 下载
@@ -21,6 +23,7 @@ SideLinker 最适合这些场景：
 - 你希望从 iPad 上一键唤起 Mac 端随航连接。
 - 你希望 iPad 靠近 Mac 时自动连接，离开后自动断开。
 - 你希望通过 USB、局域网、蓝牙近场等多种方式提高连接成功率。
+- 你愿意配合 BetterDisplay 使用虚拟屏幕，让无头 Mac mini 在没有实体显示器时也有可用显示输出。
 
 SideLinker 不是 Apple Sidecar 的替代品。它是一个辅助工具，用来更方便地触发和管理 macOS 自带的 Sidecar 能力。
 
@@ -35,6 +38,7 @@ SideLinker 不是 Apple Sidecar 的替代品。它是一个辅助工具，用来
 - 如果使用 USB 连接，请使用稳定的数据线，并在 iPad 上完成“信任此电脑”。
 - iPad 端首次启动时，请允许蓝牙、局域网和通知权限。
 - Mac 端首次启动时，请允许必要的网络和蓝牙访问。
+- 如果 Mac mini 是无头使用，请先安装并配置 BetterDisplay 虚拟屏幕。
 
 如果系统自带 Sidecar 无法手动连接，SideLinker 也无法绕过系统限制强行连接。
 
@@ -130,7 +134,7 @@ Pro 购买在 iPad 端完成。购买或恢复后，Mac 端会通过 iCloud 自�
 
 ## BetterDisplay 与虚拟屏幕
 
-SideLinker 可以配合 BetterDisplay 创建和管理虚拟屏幕，例如 `SideLinker-HD`。
+SideLinker 的无头 Mac mini 使用场景必须配合 BetterDisplay。SideLinker 可以帮助创建和管理虚拟屏幕，例如 `SideLinker-HD`，但虚拟显示能力由 BetterDisplay 提供。
 
 适用场景：
 
