@@ -10,7 +10,7 @@ SideLinker 是一个为无头 Mac mini 准备的 Sidecar 辅助工具。它解�
 
 - Mac 端最新版：前往 [GitHub Releases](https://github.com/wberry9813/SideLinker-Home/releases) 下载。
 - iPad 端：前往 [App Store](https://apps.apple.com/app/sidelinker/id6760007015) 安装。
-- 完整图文教程：查看 [飞书文档](https://vcn1p70mh4sm.feishu.cn/wiki/X6CYwbIjgiivxUkjbLdc1Z5AnPd)。
+- [飞书文档](https://vcn1p70mh4sm.feishu.cn/wiki/X6CYwbIjgiivxUkjbLdc1Z5AnPd)。
 
 建议 Mac 端和 iPad 端都保持最新版本。当前推荐 Mac 端版本为 `v1.0.5`。
 
